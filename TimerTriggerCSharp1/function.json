@@ -1,0 +1,18 @@
+{
+  "bindings": [
+    {
+      "schedule": "10 * * * * *",
+      "name": "myTimer",
+      "type": "timerTrigger",
+      "direction": "in"
+    },
+    {
+      "path": "samples-workitems/testfile.json",
+      "connection": "function21efc6658308_STORAGE",
+      "name": "myBlob",
+      "type": "blob",
+      "direction": "out"
+    }
+  ],
+  "disabled": false
+}

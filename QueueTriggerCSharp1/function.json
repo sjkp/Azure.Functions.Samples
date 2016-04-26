@@ -1,0 +1,19 @@
+{
+  "bindings": [
+    {
+      "queueName": "myqueue-items",
+      "connection": "function21efc6658308_STORAGE",
+      "name": "myQueueItem",
+      "type": "queueTrigger",
+      "direction": "in"
+    },
+    {
+      "name": "myBlob",
+      "type": "blob",
+      "path": "samples-workitems/{name}",
+      "connection": "function21efc6658308_STORAGE",
+      "direction": "out"
+    }
+  ],
+  "disabled": false
+}
